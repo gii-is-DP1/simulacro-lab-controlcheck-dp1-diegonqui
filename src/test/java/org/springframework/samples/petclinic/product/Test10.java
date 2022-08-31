@@ -46,7 +46,7 @@ public class Test10 {
         Mockito.when(productService.getProductType("Food")).thenReturn(pt);
         List<ProductType> pts=new ArrayList<ProductType>();
         pts.add(pt);
-        Mockito.when(productService.findAllProductTypes()).thenReturn(pts);
+        //Mockito.when(productService.findAllProductTypes()).thenReturn(pts);
     }
 
     @WithMockUser(value = "spring", authorities = {"admin"})
